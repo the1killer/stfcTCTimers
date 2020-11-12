@@ -1,0 +1,21 @@
+{
+    "1" : [{
+            "name": "Beku",
+            "direction": "South",
+            "attackDay": 5,
+            "attackHour": 23
+        },
+    ],
+    "2" : [{
+        "name": "Bimasa",
+        "direction": "South-SW",
+        "attackDay": 1,
+        "attackHour": 23
+    }],
+    "3" : [{
+        "name": "Barasa",
+        "direction": "South-SE",
+        "attackDay": 0,
+        "attackHour": 0
+    }]
+}

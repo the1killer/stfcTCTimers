@@ -1,0 +1,19 @@
+body {
+    background: url(bodybg.png) repeat scroll 0 0 !important;
+    /* margin-top: 38px; */
+    padding: 0;
+    font: 12px Arial, Helvetica, sans-serif !important;
+    color: #AAA;
+}
+.tier tr th{
+    border-bottom: 2px solid #CCC;
+}
+.tier tr:last-child > td {
+    padding-bottom: 20px;
+}
+.sys {
+
+}
+.time {
+    padding-left: 10px;
+}
