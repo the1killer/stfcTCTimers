@@ -1,21 +1,159 @@
 {
-    "1" : [{
+    "1" : [
+        {
             "name": "Beku",
-            "direction": "South",
+            "direction": "S",
             "attackDay": 5,
+            "attackHour": 23,
+            "power" : "PvP Dmg",
+            "resource" : "1^ Iso / 2^ Iso"
+        },
+        {
+            "name": "Gelida",
+            "direction": "S",
+            "attackDay": 0,
+            "attackHour": 18,
+            "power" : "Crystal Mining",
+            "resource" : "Trit / 2^ Iso"
+        },
+        {
+            "name": "Saldeti",
+            "direction": "S",
+            "attackDay": 5,
+            "attackHour": 20,
+            "power" : "Component Cost",
+            "resource" : "Steel / 2^ Iso"
+        },
+        {
+            "name": "Stilhe",
+            "direction": "S",
+            "attackDay": 1,
+            "attackHour": 0,
+            "power" : "Construction Cost",
+            "resource" : "Steel / 2^ Iso"
+        },
+        {
+            "name": "Thaylen",
+            "direction": "SE",
+            "attackDay": 3,
+            "attackHour": 20,
+            "power" : "Armada Dmg"
+        },
+        {
+            "name": "Comst",
+            "direction": "SE",
+            "attackDay": 5,
+            "attackHour": 17,
+            "power" : "Accuracy Boost"
+        },
+        {
+            "name": "Aonad",
+            "direction": "SE",
+            "attackDay": 5,
+            "attackHour": 22,
+            "power" : "Accuracy Boost"
+        },
+        {
+            "name": "Otima",
+            "direction": "E-SE",
+            "attackDay": 3,
+            "attackHour": 18,
+            "power" : "Research Cost"
+        },
+        {
+            "name": "Qeyma",
+            "direction": "C-E",
+            "attackDay": 0,
+            "attackHour": 17,
+            "power" : "Armor Boost",
+            "resource" : "Trit / 2^ Iso"
+        },
+        {
+            "name": "Kolava",
+            "direction": "SE",
+            "attackDay": 5,
+            "attackHour": 22,
+            "power" : "Hostile Dmg",
+            "resource" : "Steel / 2^ Iso"
+        },
+        {
+            "name": "Asiti",
+            "direction": "C-S",
+            "attackDay": 3,
+            "attackHour": 21,
+            "power" : "Ore Mining",
+            "resource" : "Dil / 2^ Iso"
+        },
+        {
+            "name": "Paturi",
+            "direction": "C-S",
+            "attackDay": 1,
+            "attackHour": 1,
+            "power" : "Shield Pen",
+            "resource" : "1^ Iso / 2^ Iso"
+        }
+    ],
+    "2" : [
+        {
+            "name": "Bimasa",
+            "direction": "S-SW",
+            "attackDay": 1,
             "attackHour": 23
         },
+        {
+            "name": "Burran",
+            "direction": "SE",
+            "attackDay": 4,
+            "attackHour": 20
+        },
+        {
+            "name": "Brijac",
+            "direction": "S",
+            "attackDay": 4,
+            "attackHour": 22,
+            "power" : "Protected Cargo"
+        },
+        {
+            "name": "Avansa",
+            "direction": "E-SE",
+            "attackDay": 4,
+            "attackHour": 19,
+            "power" : "Officer Attack",
+            "resource" : "Ore / 3^ Iso"
+        },
+        {
+            "name": "Crios",
+            "direction": "E",
+            "attackDay": 1,
+            "attackHour": 20,
+            "power" : "Siege Dmg",
+            "resource" : "Ore / 3^ Iso"
+        },
+        {
+            "name": "Anzat",
+            "direction": "C-SW",
+            "attackDay": 5,
+            "attackHour": 1,
+            "power" : "Piercing",
+            "resource" : "Crystal / 3^ Iso"
+        }
     ],
-    "2" : [{
-        "name": "Bimasa",
-        "direction": "South-SW",
-        "attackDay": 1,
-        "attackHour": 23
-    }],
-    "3" : [{
-        "name": "Barasa",
-        "direction": "South-SE",
-        "attackDay": 0,
-        "attackHour": 0
-    }]
+    "3" : [
+        {
+            "name": "Barasa",
+            "direction": "S-SE",
+            "attackDay": 0,
+            "attackHour": 0,
+            "power": "Hull Boost",
+            "resource": "Ore"
+        },
+        {
+            "name": "Corva",
+            "direction": "E",
+            "attackDay": 6,
+            "attackHour": 22,
+            "power" : "Shield Boost",
+            "resource": "Ore"
+        }
+    ]
 }

@@ -14,6 +14,27 @@ body {
 .sys {
 
 }
-.time {
+.time, .power {
     padding-left: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.yellow {
+    color: yellow;
+}
+
+.green {
+    color: green;
+}
+
+.blinking{
+	animation:blinkingText 0.8s infinite;
+}
+@keyframes blinkingText{
+	0%{		color: #F00;	}
+	50%{	color:transparent;	}
+	100%{	color: #F00;	}
 }
