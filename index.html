@@ -1,5 +1,7 @@
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./assets/style.css">
         <link rel="icon" href="./assets/favicon.png" sizes="32x32">
         <link rel="icon" href="./assets/favicon-180.png" sizes="180x180">
@@ -7,9 +9,21 @@
     </head>
     <body>
         <div id="main">
-            <h2 style="text-align: center;">STFC TC Timers</h2>
+            <div class="pageTitle">STFC TC Timers</div>
+            <span class="center"><a href="https://startrekfleetcommand.scopely.com/rules/">TC Rules</a></span>
             <table id="syslist">
-
+                <tbody id="colorsKey">
+                    <tr><td colspan='3' style="text-align: center;">Colors Key</td></tr>
+                    <tr>
+                        <td colspan="5">
+                        <span class="blinking">Attacking Now</span>
+                        , <span class="red">in &lt; 90min</span>
+                        , <span class="yellow">in &lt; 4 hr</span>
+                        , <span class="green">in &lt; 12 hr</span>
+                        , <span class="white">in &lt; 24 hr</span>
+                        , <span class="darkgrey">in &gt; 6d</span>
+                    </tr>
+                </tbody>
             </table>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>

@@ -37,28 +37,32 @@
             "direction": "SE",
             "attackDay": 3,
             "attackHour": 20,
-            "power" : "Armada Dmg"
+            "power" : "Armada Dmg",
+            "resource" : "Dil / 2^ Iso"
         },
         {
             "name": "Comst",
             "direction": "SE",
             "attackDay": 5,
             "attackHour": 17,
-            "power" : "Accuracy Boost"
+            "power" : "Accuracy Boost",
+            "resource" : "1^ Iso / 2^ Iso"
         },
         {
             "name": "Aonad",
             "direction": "SE",
             "attackDay": 0,
             "attackHour": 22,
-            "power" : "Accuracy Boost"
+            "power" : "Gas Mining Boost",
+            "resource" : "Trit / 2^ Iso"
         },
         {
             "name": "Otima",
             "direction": "E-SE",
             "attackDay": 3,
             "attackHour": 18,
-            "power" : "Research Cost"
+            "power" : "Research Cost",
+            "resource" : "Steel / 2^ Iso"
         },
         {
             "name": "Qeyma",
@@ -219,20 +223,25 @@
             "name": "Bimasa",
             "direction": "S-SW",
             "attackDay": 1,
-            "attackHour": 23
+            "attackHour": 23,
+            "power": "Defence Boost",
+            "resource" : "Crystal / 3^ Iso"
         },
         {
             "name": "Burran",
             "direction": "SE",
             "attackDay": 4,
-            "attackHour": 20
+            "attackHour": 20,
+            "power": "Officer Defense",
+            "resource": "Ore / 3^ Iso"
         },
         {
             "name": "Brijac",
             "direction": "S",
             "attackDay": 4,
             "attackHour": 22,
-            "power" : "Protected Cargo"
+            "power" : "Protected Cargo",
+            "resource": "Ore / 3^ Iso"
         },
         {
             "name": "Avansa",
@@ -295,7 +304,7 @@
             "direction": "C-W",
             "attackDay": 2,
             "attackHour": 2,
-            "power" : "Mitigation Boost",
+            "power" : "Defence Boost",
             "resource" : "Crystal / 3^ Iso"
         },
         {
