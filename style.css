@@ -2,6 +2,7 @@ body {
     background: url(bodybg.png) repeat scroll 0 0 !important;
     /* margin-top: 38px; */
     padding: 0;
+    padding-bottom: 20em;
     font: 12px Arial, Helvetica, sans-serif !important;
     color: #AAA;
 }
@@ -27,7 +28,15 @@ body {
 }
 
 .green {
-    color: green;
+    color: greenyellow;
+}
+
+.white {
+    color: white
+}
+
+.darkgrey {
+    color: rgb(80, 80, 80);
 }
 
 .blinking{

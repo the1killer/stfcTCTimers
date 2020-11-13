@@ -11,8 +11,26 @@ STFCTimers = (function() {
 
     let systemsLoaded = function(data) {
         console.log(data);
+        processData(data);
+    }
+
+    let processData = function(data) {
+        Object.keys(data).forEach(tier => {
+            data[tier].forEach(sys =>{
+                var time = moment().utc().day(sys.attackDay).hour(sys.attackHour).minute(0)
+                var strtime = time.local().calendar();
+                if(moment(time).add(15+(15*tier),"minutes").isBefore()) {
+                    time.add(1,"week")
+                    strtime = time.local().calendar(null,{sameElse:"[Next] dddd [at] h:mm a"})
+                }
+                let diff = time.local().diff(NOW,"minutes")
+                sys.diff = diff
+                sys.time = time;
+                sys.strtime = strtime;
+            })
+        })
         STFCTimers.tieredsystems = data;
-        renderLevels()
+        renderLevels()    
     }
 
     let renderLevels = function() {
@@ -29,21 +47,31 @@ STFCTimers = (function() {
 
     let renderSystems = function(tier) {
         let systems = STFCTimers.tieredsystems[tier];
+        systems.sort((a,b) => {
+            if(a.time > b.time) {
+                return 1
+            } 
+            return -1;
+        })
         systems.forEach(sys =>{
-            var time = moment().utc().day(sys.attackDay).hour(sys.attackHour).minute(0)
-            var strtime = time.local().calendar();
-            if(moment(time).add(1,"hour").isBefore()) {
-                time.add(1,"week")
-                strtime = time.local().calendar(null,{sameElse:"[Next] dddd [at] h:mm a"})
-            }
-            var diff = time.local().diff(NOW,"minutes")
+            
+            var time = sys.time;
+            var strtime = sys.strtime;
+            var diff = sys.diff;
+
             var color = null;
             if(diff < 5) {
                 color = 'blinking'
             } else if(diff < 120) {
                 color = 'red'
-            } else if(diff < 60*12) {
+            } else if(diff < 60*4) {
                 color = 'yellow'
+            } else if(diff < 60*12) {
+                color = 'green'
+            } else if(diff < 60*24) {
+                color = 'white'
+            } else if(diff > 60*24*6) {
+                color = 'darkgrey'
             }
 
             if(color != null) {

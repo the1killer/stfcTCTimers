@@ -91,6 +91,78 @@
             "attackHour": 1,
             "power" : "Shield Pen",
             "resource" : "1^ Iso / 2^ Iso"
+        },
+        {
+            "name": "Zamaro",
+            "direction": "SW",
+            "attackDay": 4,
+            "attackHour": 0,
+            "power" : "Piercing",
+            "resource" : "Dil / 2^ Iso"
+        },
+        {
+            "name": "Nujord",
+            "direction": "W-SW",
+            "attackDay": 3,
+            "attackHour": 23,
+            "power" : "Dodge",
+            "resource" : "1^ Iso / 2^ Iso"
+        },
+        {
+            "name": "Framtid",
+            "direction": "W",
+            "attackDay": 5,
+            "attackHour": 18,
+            "power" : "Research Cost",
+            "resource" : "Trit / 2^ Iso"
+        },
+        {
+            "name": "Thosz",
+            "direction": "C-W",
+            "attackDay": 4,
+            "attackHour": 1,
+            "power" : "Component Cost",
+            "resource" : "Steel / 2^ Iso"
+        },
+        {
+            "name": "Adia",
+            "direction": "C-E",
+            "attackDay": 5,
+            "attackHour": 0,
+            "power" : "PvP Dmg",
+            "resource" : "1^ Iso / 2^ Iso"
+        },
+        {
+            "name": "Temeri",
+            "direction": "N-NE",
+            "attackDay": 0,
+            "attackHour": 23,
+            "power" : "Armor Piercing",
+            "resource" : "Dil / 2^ Iso"
+        },
+        {
+            "name": "Ezla",
+            "direction": "N-NE",
+            "attackDay": 5,
+            "attackHour": 21,
+            "power" : "Hostile Dmg",
+            "resource" : "Trit / 2^ Iso"
+        },
+        {
+            "name": "Vemira",
+            "direction": "C-N",
+            "attackDay": 0,
+            "attackHour": 20,
+            "power" : "Ore Mining",
+            "resource" : "1^ Iso / 2^ Iso"
+        },
+        {
+            "name": "Tigan",
+            "direction": "C-N",
+            "attackDay": 6,
+            "attackHour": 2,
+            "power" : "Armor",
+            "resource" : "Dil / 2^ Iso"
         }
     ],
     "2" : [
@@ -136,6 +208,78 @@
             "attackHour": 1,
             "power" : "Piercing",
             "resource" : "Crystal / 3^ Iso"
+        },
+        {
+            "name": "Ber'Tho",
+            "direction": "SW",
+            "attackDay": 5,
+            "attackHour": 2,
+            "power" : "Station Defense Dmg",
+            "resource" : "Crystal / 3^ Iso"
+        },
+        {
+            "name": "Duportas",
+            "direction": "SW",
+            "attackDay": 2,
+            "attackHour": 0,
+            "power" : "Piercing",
+            "resource" : "Crystal / 3^ Iso"
+        },
+        {
+            "name": "Hrojost",
+            "direction": "W",
+            "attackDay": 4,
+            "attackHour": 23,
+            "power" : "Research Speed",
+            "resource" : "Gas / 3^ Iso"
+        },
+        {
+            "name": "Eldur",
+            "direction": "W",
+            "attackDay": 2,
+            "attackHour": 1,
+            "power" : "Siege Boost",
+            "resource" : "Gas / 3^ Iso"
+        },
+        {
+            "name": "Abilakk",
+            "direction": "C-W",
+            "attackDay": 2,
+            "attackHour": 2,
+            "power" : "Mitigation Boost",
+            "resource" : "Crystal / 3^ Iso"
+        },
+        {
+            "name": "Tezera",
+            "direction": "C-NE",
+            "attackDay": 5,
+            "attackHour": 0,
+            "power" : "Station Defense Dmg",
+            "resource" : "Crystal / 3^ Iso"
+        },
+        {
+            "name": "Triss",
+            "direction": "C-N",
+            "attackDay": 4,
+            "attackHour": 21,
+            "power" : "Protected Cargo",
+            "resource" : "Gas / 3^ Iso"
+        },
+        {
+            "name": "Hoobishan",
+            "direction": "NE",
+            "attackDay": 1,
+            "attackHour": 18,
+            "power" : "Officer Defense",
+            "resource" : "Gas / 3^ Iso"
+        },
+        {
+            "name": "Zhian",
+            "direction": "N-NW",
+            "attackDay": 1,
+            "attackHour": 19,
+            "power" : "Construction Speed",
+            "resource" : "Gas / 3^ Iso"
         }
     ],
     "3" : [
@@ -154,6 +298,38 @@
             "attackHour": 22,
             "power" : "Shield Boost",
             "resource": "Ore"
+        },
+        {
+            "name": "Brellan",
+            "direction": "SW",
+            "attackDay": 0,
+            "attackHour": 2,
+            "power" : "Officer Stat Boost",
+            "resource": "Crystal"
+        },
+        {
+            "name": "Nyrheimur",
+            "direction": "W",
+            "attackDay": 6,
+            "attackHour": 23,
+            "power" : "Repair Cost",
+            "resource": "Gas"
+        },
+        {
+            "name": "Nyrheimur",
+            "direction": "Center",
+            "attackDay": 0,
+            "attackHour": 1,
+            "power" : "Damage Boost",
+            "resource": "Crystal"
+        },
+        {
+            "name": "Mak'-'ala",
+            "direction": "N",
+            "attackDay": 6,
+            "attackHour": 21,
+            "power" : "Mining Rate",
+            "resource": "Gas"
         }
     ]
 }
