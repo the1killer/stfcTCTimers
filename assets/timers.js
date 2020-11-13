@@ -2,7 +2,7 @@
 let STFCTimers;
 STFCTimers = (function() {
     const init = function() {
-        loadFile("./systems.json",systemsLoaded);
+        loadFile("./assets/systems.json",systemsLoaded);
     }
 
     let mformat = "dddd h a"
@@ -62,7 +62,7 @@ STFCTimers = (function() {
             var color = null;
             if(diff < 5) {
                 color = 'blinking'
-            } else if(diff < 120) {
+            } else if(diff < 90) {
                 color = 'red'
             } else if(diff < 60*4) {
                 color = 'yellow'

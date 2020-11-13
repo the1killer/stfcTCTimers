@@ -163,6 +163,46 @@
             "attackHour": 2,
             "power" : "Armor",
             "resource" : "Dil / 2^ Iso"
+        },
+        {
+            "name": "Helvi",
+            "direction": "NW",
+            "attackDay": 0,
+            "attackHour": 21,
+            "power" : "Shield Deflection",
+            "resource" : "Steel / 2^ Iso"
+        },
+        {
+            "name": "Lenara",
+            "direction": "N",
+            "attackDay": 4,
+            "attackHour": 2,
+            "power" : "Shield Penetration",
+            "resource" : "1^ Iso / 2^ Iso"
+        },
+        {
+            "name": "Klefaski",
+            "direction": "NW",
+            "attackDay": 6,
+            "attackHour": 0,
+            "power" : "Armada Dmg",
+            "resource" : "1^ Iso / 2^ Iso"
+        },
+        {
+            "name": "Tefkari",
+            "direction": "NW",
+            "attackDay": 3,
+            "attackHour": 22,
+            "power" : "Accuracy",
+            "resource" : "1^ Iso / 2^ Iso"
+        },
+        {
+            "name": "Innlasn",
+            "direction": "NW",
+            "attackDay": 0,
+            "attackHour": 19,
+            "power" : "Gas Mining",
+            "resource" : "Dil / 2^ Iso"
         }
     ],
     "2" : [
@@ -279,6 +319,14 @@
             "attackDay": 1,
             "attackHour": 19,
             "power" : "Construction Speed",
+            "resource" : "Gas / 3^ Iso"
+        },
+        {
+            "name": "Vantar",
+            "direction": "NW",
+            "attackDay": 4,
+            "attackHour": 18,
+            "power" : "Officer Attack",
             "resource" : "Gas / 3^ Iso"
         }
     ],

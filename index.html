@@ -1,23 +1,29 @@
 <html>
     <head>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./assets/style.css">
+        <link rel="icon" href="./assets/favicon.png" sizes="32x32">
+        <link rel="icon" href="./assets/favicon-180.png" sizes="180x180">
+        <link rel="apple-touch-icon" href="./assets/favicon-180.png">
     </head>
     <body>
         <div id="main">
-            <h2>STFC TC Timers</h2>
+            <h2 style="text-align: center;">STFC TC Timers</h2>
             <table id="syslist">
 
             </table>
         </div>
         <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet-src.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/corejs-typeahead@1.3.1/dist/typeahead.bundle.min.js"></script>
-        <script src="./timers.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/leaflet@1.7.1/dist/leaflet-src.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/moment@2.29.1/moment.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/corejs-typeahead@1.3.1/dist/typeahead.bundle.min.js"></script>
+        <script src="./assets/timers.js"></script>
         <script>
             $(document).ready(function() {
                 STFCTimers.init();
+                setTimeout(function(){
+                    window.location.reload(1); //refresh every 15 min
+                }, 15 * 60 * 1000);
             });
         </script>
     </body>
