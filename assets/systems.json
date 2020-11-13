@@ -49,7 +49,7 @@
         {
             "name": "Aonad",
             "direction": "SE",
-            "attackDay": 5,
+            "attackDay": 0,
             "attackHour": 22,
             "power" : "Accuracy Boost"
         },
