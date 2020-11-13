@@ -4,13 +4,23 @@ body {
     /* margin-top: 38px; */
     padding: 0;
     padding-bottom: 20em;
-    font: 12px Arial, Helvetica, sans-serif !important;
+    font: 12px 'Open Sans', Arial, Helvetica, sans-serif !important;
     color: #AAA;
+}
+
+a, a:visited {
+    font-weight: bold;
+    color: #37ccff;
 }
 
 .center {
     margin-left: auto;
     margin-right: auto;
+}
+
+.pageTitle {
+    font-size: 2em;
+    padding-left: 250px;
 }
 
 .tier tr th{
@@ -35,7 +45,7 @@ body {
 }
 
 .green {
-    color: greenyellow;
+    color: #0F0;
 }
 
 .white {

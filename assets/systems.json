@@ -204,6 +204,15 @@
             "power" : "Gas Mining",
             "resource" : "Dil / 2^ Iso"
         }
+        ,
+        {
+            "name": "Ruhe",
+            "direction": "SE",
+            "attackDay": 5,
+            "attackHour": 19,
+            "power" : "Gas Mining",
+            "resource" : "1^ Iso / 2^ Iso"
+        }
     ],
     "2" : [
         {
