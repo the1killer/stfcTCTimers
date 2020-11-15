@@ -207,8 +207,7 @@
             "attackHour": 19,
             "power" : "Gas Mining",
             "resource" : "Dil / 2^ Iso"
-        }
-        ,
+        },
         {
             "name": "Ruhe",
             "direction": "SE",
@@ -216,6 +215,14 @@
             "attackHour": 19,
             "power" : "Gas Mining",
             "resource" : "1^ Iso / 2^ Iso"
+        },
+        {
+            "name": "Tazolka",
+            "direction": "SW",
+            "attackDay": 6,
+            "attackHour": 1,
+            "power" : "Dodge Boost",
+            "resource" : "Trit / 2^ Iso"
         }
     ],
     "2" : [
