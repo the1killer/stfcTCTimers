@@ -35,9 +35,13 @@
         <script>
             $(document).ready(function() {
                 STFCTimers.init();
+
+                var reloadAt = moment().roundNext15Min()
+                var ms = reloadAt.diff(moment(),'milliseconds') + 1000;
+                console.log("Reloading in "+(ms/1000)+" seconds")
                 setTimeout(function(){
                     window.location.reload(1); //refresh every 15 min
-                }, 15 * 60 * 1000);
+                }, ms);
             });
         </script>
     </body>
