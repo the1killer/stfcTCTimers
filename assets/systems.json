@@ -353,6 +353,14 @@
             "attackHour": 18,
             "power" : "Officer Attack",
             "resource" : "Gas / 3^ Iso"
+        },
+        {
+            "name": "Roshar",
+            "direction": "SE",
+            "attackDay": 41,
+            "attackHour": 10,
+            "power" : "Research Speed",
+            "resource" : "Ore / 3^ Iso"
         }
     ],
     "3" : [
