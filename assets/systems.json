@@ -358,7 +358,7 @@
             "name": "Roshar",
             "direction": "SE",
             "attackDay": 1,
-            "attackHour": 10,
+            "attackHour": 22,
             "power" : "Research Speed",
             "resource" : "Ore / 3^ Iso"
         }
