@@ -74,6 +74,12 @@ STFCTimers = (function() {
             var strtime = sys.strtime;
             var diff = sys.diff;
 
+            var find = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Tomorrow"];
+            var replace = ["Sun","Mon","Tues","Wed","Thur","Fri","Sat","<small>Tomorrow</small>"];
+            for(var i=0;i<find.length;i++) {
+                strtime = strtime.replace(find[i],replace[i])
+            }
+
             var color = null;
             if(diff < 5) {
                 color = 'blinking'

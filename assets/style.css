@@ -4,7 +4,7 @@ body {
     /* margin-top: 38px; */
     padding: 0;
     padding-bottom: 20em;
-    font: 12px 'Open Sans', Arial, Helvetica, sans-serif !important;
+    font: 11px 'Open Sans', Arial, Helvetica, sans-serif !important;
     color: #AAA;
 }
 
@@ -65,6 +65,10 @@ a, a:visited {
 
 .darkgrey {
     color: rgb(80, 80, 80);
+}
+
+.time span small {
+    font-size: 0.6em;
 }
 
 .blinking{
