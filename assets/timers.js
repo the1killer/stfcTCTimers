@@ -49,17 +49,18 @@ STFCTimers = (function() {
 
     let renderLevels = function() {
         Object.keys(STFCTimers.tieredsystems).forEach(tier => {
+            var hide = location.hash.includes("hidet"+tier);
             $("#syslist").append(`
             <tbody id='t${tier}' class='tier'>
-                <tr><th colspan='5'>Tier ${tier}</th></tr>
-                <tr><th>Name</th><th>Direction</th><th>Next Attack</th><th>Power</th><th>Resource</th>
+                <tr><th colspan='5' class='tierheader' onclick="STFCTimers.toggleTier(${tier})">Tier ${tier}</th></tr>
+                <tr data-tier='${tier}' class='${hide ? "hide" : ""}'><th>Name</th><th>Direction</th><th>Next Attack</th><th>Power</th><th>Resource</th>
             </tbody>
             `);
-            renderSystems(tier)
+            renderSystems(tier, hide)
         });
     }
 
-    let renderSystems = function(tier) {
+    let renderSystems = function(tier, hide) {
         let systems = STFCTimers.tieredsystems[tier];
         systems.sort((a,b) => {
             if(a.time > b.time) {
@@ -95,7 +96,7 @@ STFCTimers = (function() {
             }
 
             $("#t"+tier).append(`
-            <tr id='sys-"${sys.name}"' class='sys'>
+            <tr id='sys-${sys.name}' class='sys ${hide ? "hide" : ""}' data-tier='${tier}'>
                 <td>${sys.name}</td>
                 <td>${sys.direction}</td>
                 <td class="time"><span class="${color}">${strtime}</span></td>
@@ -103,11 +104,28 @@ STFCTimers = (function() {
                 <td class="power">${sys.resource || ""}</td>
             </tr>`)
         })
+        $("#t"+tier).append(`<tr class='bottompadd'><td></td></tr>`)
+    }
+
+    let toggleTier = function(num) {
+        var eles = $('tr[data-tier='+num+']');
+        if(eles[0].classList.contains("hide")) {
+            eles.removeClass('hide');
+            if(location.hash.includes("hidet"+num)) {
+                location.hash = location.hash.replace(",hidet"+num,'');
+            }
+        } else {
+            eles.addClass('hide');
+            if(location.hash.includes("hidet"+num) == false) {
+                location.hash += ",hidet"+num
+            }
+        }
     }
 
     return {
         init,
-        tieredsystems
+        tieredsystems,
+        toggleTier
     }
 })();
 

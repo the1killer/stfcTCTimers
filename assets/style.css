@@ -33,6 +33,13 @@ a, a:visited {
 .tier tr:last-child > td {
     padding-bottom: 20px;
 }
+.tierheader {
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
 .sys {
 
 }
