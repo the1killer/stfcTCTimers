@@ -131,8 +131,8 @@
         {
             "name": "Adia",
             "direction": "C-E",
-            "attackDay": 5,
-            "attackHour": 0,
+            "attackDay": 3,
+            "attackHour": 17,
             "power" : "PvP Dmg",
             "resource" : "1^ Iso / 2^ Iso"
         },
@@ -223,6 +223,14 @@
             "attackHour": 1,
             "power" : "Dodge Boost",
             "resource" : "Trit / 2^ Iso"
+        },
+        {
+            "name": "Otima",
+            "direction": "SE",
+            "attackDay": 3,
+            "attackHour": 18,
+            "power" : "Research Cost",
+            "resource" : "Steel / 2^ Iso"
         }
     ],
     "2" : [
