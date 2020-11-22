@@ -48,7 +48,21 @@ a, a:visited {
 
 }
 .time, .power {
-    padding-left: 10px;
+    /* padding-left: 10px; */
+}
+
+.duration {
+    font-size: 0.9em;
+    letter-spacing: -0.2ch;
+    width: 10%;
+}
+
+.resource {
+    font-size: 0.8em;
+}
+
+.today {
+    font-size: 0.8em !important;
 }
 
 .red {

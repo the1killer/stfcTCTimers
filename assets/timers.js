@@ -77,7 +77,7 @@ STFCTimers = (function() {
             $("#syslist").append(`
             <tbody id='t${tier}' class='tier'>
                 <tr><th colspan='6' class='tierheader' onclick="STFCTimers.toggleTier(${tier})">Tier ${tier}</th></tr>
-                <tr data-tier='${tier}' class='${hide ? "hide" : ""}'><th>Name</th><th>Direction</th><th>Next Attack</th><th></th><th>Power</th><th>Resource</th>
+                <tr data-tier='${tier}' class='${hide ? "hide" : ""}'><th>Name</th><th>Dir</th><th>Next Attack</th><th></th><th>Power</th><th>Resource</th>
             </tbody>
             `);
             renderSystems(tier, hide)
@@ -98,8 +98,8 @@ STFCTimers = (function() {
             var strtime = sys.strtime;
             var diff = sys.diff;
 
-            var find = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Tomorrow"];
-            var replace = ["Sun","Mon","Tues","Wed","Thur","Fri","Sat","<small>Tomorrow</small>"];
+            var find = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Today","Tomorrow"];
+            var replace = ["Sun","Mon","Tues","Wed","Thur","Fri","Sat","<small class='today'>Today</small>","<small>Tomorrow</small>"];
             for(var i=0;i<find.length;i++) {
                 strtime = strtime.replace(find[i],replace[i])
             }
@@ -139,7 +139,7 @@ STFCTimers = (function() {
                 <td class="time"><span class="${color}">${strtime}</span></td>
                 <td class="duration">${duration}</td>
                 <td class="power">${sys.power || ""}</td>
-                <td class="power">${sys.resource || ""}</td>
+                <td class="resource">${sys.resource || ""}</td>
             </tr>`)
         })
         $("#t"+tier).append(`<tr class='bottompadd'><td></td></tr>`)

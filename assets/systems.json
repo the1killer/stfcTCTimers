@@ -287,7 +287,7 @@
             "direction": "SW",
             "attackDay": 5,
             "attackHour": 2,
-            "power" : "Station Defense Dmg",
+            "power" : "Station Def Dmg",
             "resource" : "Crystal / 3^ Iso"
         },
         {
@@ -327,7 +327,7 @@
             "direction": "C-NE",
             "attackDay": 5,
             "attackHour": 0,
-            "power" : "Station Defense Dmg",
+            "power" : "Station Def Dmg",
             "resource" : "Crystal / 3^ Iso"
         },
         {
