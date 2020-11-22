@@ -39,7 +39,11 @@ STFCTimers = (function() {
                 var strtime = time.local().calendar();
                 if(moment(time).add(15+(15*tier),"minutes").isBefore()) {
                     time.add(1,"week")
-                    strtime = time.local().calendar(null,{sameElse:"[Next] dddd [at] h:mm a"})
+                    let next = "[Next] dddd [at] h:mm a"
+                    strtime = time.local().calendar(null,{nextWeek: next, sameElse: next})
+                } else if(moment(time).local().diff(moment(),'hours') > 6*24) {
+                    let next = "[Next] dddd [at] h:mm a"
+                    strtime = time.local().calendar(null,{nextWeek: next, sameElse: next})
                 }
                 let diff = time.local().diff(NOW,"minutes")
                 sys.diff = diff
