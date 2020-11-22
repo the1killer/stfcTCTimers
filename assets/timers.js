@@ -13,6 +13,22 @@ moment.fn.roundNext15Min = function () {
         return this;
     }
 
+const shortEnglishHumanizer = humanizeDuration.humanizer({
+    language: "shortEn",
+    languages: {
+        shortEn: {
+        y: () => "y",
+        mo: () => "mo",
+        w: () => "w",
+        d: () => "d",
+        h: () => "h",
+        m: () => "m",
+        s: () => "s",
+        ms: () => "ms",
+        },
+    },
+});
+
 let STFCTimers;
 STFCTimers = (function() {
     const init = function() {
@@ -60,8 +76,8 @@ STFCTimers = (function() {
             var hide = location.hash.includes("hidet"+tier);
             $("#syslist").append(`
             <tbody id='t${tier}' class='tier'>
-                <tr><th colspan='5' class='tierheader' onclick="STFCTimers.toggleTier(${tier})">Tier ${tier}</th></tr>
-                <tr data-tier='${tier}' class='${hide ? "hide" : ""}'><th>Name</th><th>Direction</th><th>Next Attack</th><th>Power</th><th>Resource</th>
+                <tr><th colspan='6' class='tierheader' onclick="STFCTimers.toggleTier(${tier})">Tier ${tier}</th></tr>
+                <tr data-tier='${tier}' class='${hide ? "hide" : ""}'><th>Name</th><th>Direction</th><th>Next Attack</th><th></th><th>Power</th><th>Resource</th>
             </tbody>
             `);
             renderSystems(tier, hide)
@@ -109,11 +125,19 @@ STFCTimers = (function() {
                 color = "";
             }
 
+            var duration = shortEnglishHumanizer(time.diff());
+            duration = duration.replace(/[\s\t]+/g,'');
+            var split = duration.split(',')
+            if(split.length > 2) {
+                duration = `${split[0]} ${split[1]}`
+            }
+
             $("#t"+tier).append(`
             <tr id='sys-${sys.name}' class='sys ${hide ? "hide" : ""}' data-tier='${tier}'>
                 <td>${sys.name}</td>
                 <td>${sys.direction}</td>
                 <td class="time"><span class="${color}">${strtime}</span></td>
+                <td class="duration">${duration}</td>
                 <td class="power">${sys.power || ""}</td>
                 <td class="power">${sys.resource || ""}</td>
             </tr>`)
