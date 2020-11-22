@@ -14,13 +14,17 @@ a, a:visited {
 }
 
 .center {
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 .pageTitle {
     font-size: 2em;
-    padding-left: 250px;
+    /* padding-left: 250px; */
+}
+
+.timezone {
+    font-size: 1.25em;
+    /* padding-left: 25%; */
 }
 
 #colorsKey {

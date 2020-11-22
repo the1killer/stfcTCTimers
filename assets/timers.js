@@ -26,6 +26,10 @@ STFCTimers = (function() {
     let systemsLoaded = function(data) {
         console.log(data);
         processData(data);
+
+        var str = moment()._d.toString();
+        str = str.match(/\(([\w\s]+)\)/)
+        $('.timezone').text(`Times are in ${str[0]}`)
     }
 
     let processData = function(data) {
