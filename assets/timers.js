@@ -77,7 +77,7 @@ STFCTimers = (function() {
             $("#syslist").append(`
             <tbody id='t${tier}' class='tier'>
                 <tr><th colspan='6' class='tierheader' onclick="STFCTimers.toggleTier(${tier})">Tier ${tier}</th></tr>
-                <tr data-tier='${tier}' class='${hide ? "hide" : ""}'><th>Name</th><th>Dir</th><th>Next Attack</th><th></th><th>Power</th><th>Resource</th>
+                <tr data-tier='${tier}' class='${hide ? "hide" : ""}'><th>Name</th><th>Dir</th><th colspan='2'>Next Attack</th><th>Power</th><th>Resource</th>
             </tbody>
             `);
             renderSystems(tier, hide)
