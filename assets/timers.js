@@ -40,7 +40,7 @@ STFCTimers = (function() {
     let NOW = moment()
 
     let systemsLoaded = function(data) {
-        console.log(data);
+        // console.log(data);
         processData(data);
 
         var str = moment()._d.toString();
