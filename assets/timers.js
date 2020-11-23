@@ -131,6 +131,9 @@ STFCTimers = (function() {
             if(split.length > 2) {
                 duration = `${split[0]} ${split[1]}`
             }
+            if(duration.includes("s")) {
+                duration = `${split[0]}`
+            }
 
             $("#t"+tier).append(`
             <tr id='sys-${sys.name}' class='sys ${hide ? "hide" : ""}' data-tier='${tier}'>
