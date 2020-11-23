@@ -134,6 +134,10 @@ STFCTimers = (function() {
             if(duration.includes("s")) {
                 duration = `${split[0]}`
             }
+            if(time.diff() < 0) {
+                // duration = "<span class='red'>– "+duration+"</span>";
+                duration = "<span class='red'>Now</span>";
+            }
 
             $("#t"+tier).append(`
             <tr id='sys-${sys.name}' class='sys ${hide ? "hide" : ""}' data-tier='${tier}'>
