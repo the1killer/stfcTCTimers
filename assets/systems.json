@@ -57,14 +57,6 @@
             "resource" : "Trit / 2^ Iso"
         },
         {
-            "name": "Otima",
-            "direction": "E-SE",
-            "attackDay": 3,
-            "attackHour": 18,
-            "power" : "Research Cost",
-            "resource" : "Steel / 2^ Iso"
-        },
-        {
             "name": "Qeyma",
             "direction": "C-E",
             "attackDay": 0,
@@ -230,6 +222,14 @@
             "attackDay": 3,
             "attackHour": 18,
             "power" : "Research Cost",
+            "resource" : "Steel / 2^ Iso"
+        },
+        {
+            "name": "Perim",
+            "direction": "NE",
+            "attackDay": 3,
+            "attackHour": 19,
+            "power" : "Construction Cost",
             "resource" : "Steel / 2^ Iso"
         }
     ],
